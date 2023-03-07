@@ -1,7 +1,7 @@
 node {
   
     stage('Checkout') {
-        git branch: 'main', url: 'https://github.com/guddn1963/vaccine-reservation-system'
+        git branch: 'main', url: 'https://github.com/guddn1963/vaccine-system'
     }
     stage('Login'){
         sh 'echo jyhfpkcs%% | docker login -u guddn1963 --password-stdin' // docker hub 로그인
