@@ -4,7 +4,7 @@ node {
         git branch: 'main', url: 'https://github.com/guddn1963/covid19-vaccine'
     }
     stage('Login'){
-        sh 'docker login -u guddn1963 --password-stdin' // docker hub 로그인
+        sh 'echo jyhfpkcs%% | docker login -u guddn1963 --password-stdin'
     }
     stage('Build Docker Image') {
         sh 'docker image build --network host -t guddn1963/django:latest .'
